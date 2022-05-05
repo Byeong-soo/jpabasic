@@ -19,9 +19,12 @@ public class JpaMain {
 
         try {
             // 회원 저장
+            // 비영속
 //            Member member = new Member();
 //            member.setId(2L);
 //            member.setName("HelloB");
+
+            // 영속
 //            em.persist(member);
 
             // 수정
@@ -29,14 +32,14 @@ public class JpaMain {
 //            findMember.setName("HelloJpa");
 
             // 조건 조회
-            List<Member> result = em.createQuery("select m from Member as m", Member.class)
-                    .setFirstResult(1)
-                    .setMaxResults(5)
-                    .getResultList();
-
-            for (Member member : result) {
-                System.out.println("member.getName() = " + member.getName());
-            }
+//            List<Member> result = em.createQuery("select m from Member as m", Member.class)
+//                    .setFirstResult(1)
+//                    .setMaxResults(5)
+//                    .getResultList();
+//
+//            for (Member member : result) {
+//                System.out.println("member.getName() = " + member.getName());
+//            }
             
             tx.commit();
 
