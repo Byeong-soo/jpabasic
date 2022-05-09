@@ -30,6 +30,9 @@ public class Member3 {
 //        team.getMembers().add(this);
 //    }
 
+    @OneToOne
+    @JoinColumn(name = "LOCKER_ID")
+    private Locker locker;
 
     @Override
     public String toString() {
