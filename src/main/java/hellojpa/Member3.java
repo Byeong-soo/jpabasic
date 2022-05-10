@@ -8,7 +8,7 @@ import javax.persistence.*;
 // 연관관계에 쓰일 Member 객체
 @Entity
 @Getter @Setter
-public class Member3 {
+public class Member3 extends BaseEntity{
 
     @Id @GeneratedValue
     @Column(name = "MEMBER_ID")
