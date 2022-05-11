@@ -4,6 +4,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.util.List;
 
 // 연관관계에 쓰일 Member 객체
 @Entity
@@ -30,9 +31,10 @@ public class Member3 extends BaseEntity{
 //        team.getMembers().add(this);
 //    }
 
-    @OneToOne
-    @JoinColumn(name = "LOCKER_ID")
-    private Locker locker;
+//    @OneToOne
+//    @JoinColumn(name = "LOCKER_ID")
+//    private Locker locker;
+
 
     @Override
     public String toString() {
