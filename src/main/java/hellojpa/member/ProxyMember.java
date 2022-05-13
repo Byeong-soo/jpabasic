@@ -1,5 +1,7 @@
-package hellojpa;
+package hellojpa.member;
 
+import hellojpa.item.BaseEntity;
+import hellojpa.item.Team;
 import lombok.Getter;
 import lombok.Setter;
 

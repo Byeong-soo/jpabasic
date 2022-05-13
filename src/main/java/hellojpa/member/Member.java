@@ -1,4 +1,6 @@
-package hellojpa;
+package hellojpa.member;
+
+import hellojpa.item.RoleType;
 
 import javax.persistence.*;
 import java.util.Date;

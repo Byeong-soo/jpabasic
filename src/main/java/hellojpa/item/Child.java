@@ -1,5 +1,6 @@
-package hellojpa;
+package hellojpa.item;
 
+import hellojpa.item.Parent;
 import lombok.Getter;
 import lombok.Setter;
 

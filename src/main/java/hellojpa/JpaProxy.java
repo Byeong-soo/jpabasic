@@ -1,6 +1,7 @@
 package hellojpa;
 
-import org.hibernate.Hibernate;
+import hellojpa.item.Team;
+import hellojpa.member.Member3;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;

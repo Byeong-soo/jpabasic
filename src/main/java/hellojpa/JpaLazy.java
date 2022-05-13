@@ -1,5 +1,8 @@
 package hellojpa;
 
+import hellojpa.item.Team;
+import hellojpa.member.ProxyMember;
+
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;

@@ -1,5 +1,7 @@
 package hellojpa;
 
+import hellojpa.member.Member2;
+
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;

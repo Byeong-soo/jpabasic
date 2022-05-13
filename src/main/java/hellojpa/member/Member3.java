@@ -1,15 +1,16 @@
-package hellojpa;
+package hellojpa.member;
 
+import hellojpa.item.BaseEntity;
+import hellojpa.item.Team;
 import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
-import java.util.List;
 
 // 연관관계에 쓰일 Member 객체
 @Entity
 @Getter @Setter
-public class Member3 extends BaseEntity{
+public class Member3 extends BaseEntity {
 
     @Id @GeneratedValue
     @Column(name = "MEMBER_ID")
