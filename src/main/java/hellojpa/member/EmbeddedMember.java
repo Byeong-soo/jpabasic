@@ -1,15 +1,17 @@
 package hellojpa.member;
 
+import hellojpa.Address;
+import hellojpa.Period;
 import hellojpa.item.BaseEntity;
+import lombok.Getter;
+import lombok.Setter;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.time.LocalDateTime;
 
 @Entity
-public class EmbeddedMember extends BaseEntity {
+@Setter @Getter
+public class EmbeddedMember{
 
     @Id @GeneratedValue
     @Column(name = "MEMBER_ID")
@@ -18,10 +20,10 @@ public class EmbeddedMember extends BaseEntity {
     @Column(name = "USERNAME")
     private String username;
 
-    private LocalDateTime startDate;
-    private LocalDateTime endDate;
-
-    private String city;
-    private String street;
-    private String zipcode;
-}
+    //기간 Period
+    @Embedded
+    private Period workPeriod;
+   //주소
+    @Embedded
+    private Address homeAddress;
+    }
